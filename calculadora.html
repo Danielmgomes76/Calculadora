@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Simples</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+    form {
+      max-width: 300px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    input, select, button {
+      display: block;
+      margin: 10px 0;
+      padding: 8px 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2>Calculadora Simples</h2>
+  <form id="calcForm">
+    <label for="num1">Número 1:</label>
+    <input type="text" id="num1" required>
+
+    <label for="num2">Número 2:</label>
+    <input type="text" id="num2" required>
+
+    <label for="operador">Operação:</label>
+    <select id="operador" required>
+      <option value="+">Adição (+)</option>
+      <option value="-">Subtração (-)</option>
+      <option value="*">Multiplicação (*)</option>
+      <option value="/">Divisão (/)</option>
+    </select>
+
+    <button type="submit">Calcular</button>
+    <h3 id="resultado">Resultado: --</h3>
+  </form>
+</body>
+</html>
